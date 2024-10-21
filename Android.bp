@@ -3,3 +3,16 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+
+android_app_import {
+	name: "LatinIMEGooglePrebuilt",
+	owner: "gms",
+	apk: "proprietary/product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk",
+	overrides: ["LatinIME"],
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
